@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableHighlight } from 'react-native';
 
-import {StackNavigator} from 'react-navigation';
+import { StackNavigator } from 'react-navigation'; // Installed NPM Package
 
-import LoginScreen from './Screens/LoginScreen.js';
-import HomeScreen from './Screens/HomeScreen.js';
+import LoginScreen from './Screens/LoginScreen.js'; // Import a Screen from Screens Folder
+import HomeScreen from './Screens/HomeScreen.js';  // Import a Screen from Screens Folder
 
 
 export default class App extends React.Component {
@@ -21,15 +21,15 @@ export default class App extends React.Component {
 }
 
 
+
+
+// React Navigation Setup: 
 const AppNavigator = StackNavigator ({
   LoginScreen: {screen: LoginScreen},
   HomeScreen: {screen: HomeScreen}
 
 
 })
-
-
-
 
 const styles = StyleSheet.create({
   container: {
